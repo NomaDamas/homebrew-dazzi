@@ -18,6 +18,7 @@ cask "dazzi" do
   # The app updates itself (electron-updater); brew upgrade only needs to catch up, not fight it.
   auto_updates true
   depends_on arch: :arm64
+  depends_on macos: :ventura
 
   app "Dazzi.app"
 end
