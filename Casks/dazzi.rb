@@ -1,8 +1,8 @@
 cask "dazzi" do
   arch arm: "arm64"
 
-  version "0.1.6"
-  sha256 arm: "bbee683e529d73f8cc8618c798571faa60aea463058bd317067980ee2dda3a94"
+  version "0.1.7"
+  sha256 arm: "39ea864fdfcb2691d0c1888a345df211143244d2feaf3fbb2c046fb9308a7656"
 
   url "https://github.com/NomaDamas/AutoRAG-app/releases/download/v#{version}/Dazzi-#{version}-#{arch}.dmg",
       verified: "github.com/NomaDamas/AutoRAG-app/"
@@ -21,4 +21,6 @@ cask "dazzi" do
   depends_on macos: :ventura
 
   app "Dazzi.app"
+  # The dazzi command (dazzi <folder> opens it in Dazzi); the app also links it itself on first start, so either order works.
+  binary "#{appdir}/Dazzi.app/Contents/Resources/bin/dazzi"
 end
