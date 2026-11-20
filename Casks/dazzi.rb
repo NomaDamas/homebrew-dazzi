@@ -1,8 +1,8 @@
 cask "dazzi" do
   arch arm: "arm64"
 
-  version "0.3.5"
-  sha256 arm: "4ae7ea607d6dd68f490c5259e7043dccc533cb11dd0de149a504089a73d5b43b"
+  version "0.4.0"
+  sha256 arm: "fd6f0b0da78d6b12b30516bf6aae7ced171a78bd185e444ecd159e0dd378d15d"
 
   url "https://github.com/NomaDamas/AutoRAG-app/releases/download/v#{version}/Dazzi-#{version}-#{arch}.dmg",
       verified: "github.com/NomaDamas/AutoRAG-app/"
